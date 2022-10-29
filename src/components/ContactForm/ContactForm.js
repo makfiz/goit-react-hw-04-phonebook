@@ -9,7 +9,7 @@ const ContactForm = ({ submit }) => {
     const [number, setNumber] = useState('')
 
     const handleSubmit = (e) => {
-        console.log('click')
+        // console.log('click')
         e.preventDefault()
         submit({name, number})
         e.currentTarget.reset()  
