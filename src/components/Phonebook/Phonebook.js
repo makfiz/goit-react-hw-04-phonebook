@@ -50,10 +50,11 @@ const Phonebook = () => {
     },[])
     
     
-    useEffect((state) => {
-                if (state !== contacts) {
+    useEffect(() => {
+        // console.log(state)
+        //         if (state !== contacts) {
             localStorage.setItem('contacts', JSON.stringify(contacts))
-        }
+        // }
     },[contacts])
 
 

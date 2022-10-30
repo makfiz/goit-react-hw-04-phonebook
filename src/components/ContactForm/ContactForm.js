@@ -9,16 +9,12 @@ const ContactForm = ({ submit }) => {
     const [number, setNumber] = useState('')
 
     const handleSubmit = (e) => {
-        // console.log('click')
         e.preventDefault()
         submit({name, number})
         e.currentTarget.reset()  
     }
 
   const  onChangeHandler = (e) => { 
-        
-    //     this.setState({[name]: e.target.value}
-    //    )
         switch (e.target.name) {
             case 'name': 
                 setName(e.target.value)
